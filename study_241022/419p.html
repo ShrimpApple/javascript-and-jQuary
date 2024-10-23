@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="../javascript/jquery-3.6.0"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquer.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        .container {
+            width: 500px;
+            padding: 20px;
+            margin: auto;
+            background: #eeeeee;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#datepicker").datepicker({
+            changeMonth: true,
+            changeYear: true
+            }); 
+        });
+    </script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>데이트피커(Datepicker)</h2>
+        <form>
+            Date: <input id="datepicker">
+        </form>
+    </div>
+</body>
+</html>

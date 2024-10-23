@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <div id="result"></div>
+    <script>
+        let city =["서울", "부산", "인천", "대전", "광주"];
+        let low_temp =[10, 11, 12, 10, 13];
+        let high_temp =[27, 26, 28, 28, 26];
+
+        let contents = "";
+        contents += "<h3>지역별 기오노가 일교차</h3>"
+        contents += "<table>";
+        contents += "<tr><th>지역</th><th>최저기온</th><th>최고기온</th><th>일교차</th></tr>";
+
+            let i = 0;
+            while (i<=4) {
+                diff = high_temp[i] - low_temp[i];
+
+                contents +="<tr>";
+                contents +="<td>" + city[i] + "</td>";
+                contents +="<td>" + low_temp[i] + "</td>";
+                contents +="<td>" + high_temp[i] + "</td>";
+                contents +="<td>" + diff + "</td>";
+                contents +="</tr>";
+
+                i++;
+            }
+
+            contents +="</table>";
+            document.getElementById("result").innerHTML = contents;
+    </script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

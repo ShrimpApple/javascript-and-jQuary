@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <!--- <script src="./javascript/jquery-3.6.0.js"></script> --->
+<script src="../javascript/jquery-3.6.0"></script>
+<script>
+      $(document).ready(function() {  
+      $("p").on({
+        mouseenter: function(){
+          $(this).css("background-color", "yellow");
+        },
+        mouseleave: function(){
+          $(this).css("background-color", "pink");
+        },
+        click: function(){
+          $(this).css("background-color", "skyblue");
+        },
+        dblclick: function(){
+          $(this).css("background-color", "red");
+        }
+      });
+    });
+</script>
+    <meta charset="UTF-8">
+    <title>이벤트 키보드 메소드 실습</title>
+</head>
+<body>
+  <p style="border: solid 1px black;">
+    말 없는 발이 천리간다.
+  </p>
+</body>
+
+</html>
